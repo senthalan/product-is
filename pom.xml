@@ -509,6 +509,21 @@
                 <version>${org.wso2.carbon.identity.inbound.provisioning.scim2.version}</version>
                 <type>zip</type>
             </dependency>
+
+            <!--depedencies for entitlement xacml-->
+            <dependency>
+                <groupId>org.wso2.carbon.identity.entitlement.xacml</groupId>
+                <artifactId>org.wso2.carbon.identity.entitlement.xacml.core</artifactId>
+                <version>${org.wso2.carbon.identity.entitlement.xacml.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wso2.carbon.identity.entitlement.xacml</groupId>
+                <artifactId>org.wso2.carbon.identity.entitlement.xacml.endpoint</artifactId>
+                <version>${org.wso2.carbon.identity.entitlement.xacml.version}</version>
+                <type>zip</type>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -556,7 +571,8 @@
         <org.wso2.carbon.identity.mgt.version>1.0.0-SNAPSHOT</org.wso2.carbon.identity.mgt.version>
         <carbon.uuf.version>1.0.0-SNAPSHOT</carbon.uuf.version>
         <carbon.security.caas.version>1.0.0-SNAPSHOT</carbon.security.caas.version>
-        <org.wso2.carbon.identity.inbound.provisioning.scim2.version>2.0.0-SNAPSHOT</org.wso2.carbon.identity.inbound.provisioning.scim2.version>
+        <org.wso2.carbon.identity.inbound.provisioning.scim2.version>2.0.0-SNAPSHOT
+        </org.wso2.carbon.identity.inbound.provisioning.scim2.version>
 
         <!--3rd party related properties-->
         <commons-beanutils.wso2.version>1.8.0.wso2v1</commons-beanutils.wso2.version>
@@ -642,6 +658,10 @@
 
         <!--<org.wso2.carbon.caching.version>1.0.0</org.wso2.carbon.caching.version>-->
 
+        <!--entitlement xacml version-->
+        <org.wso2.carbon.identity.entitlement.xacml.version>1.0.0-SNAPSHOT
+        </org.wso2.carbon.identity.entitlement.xacml.version>
+        <!--<org.wso2.carbon.identity.entitlement.xacml.version>1.0.0-SNAPSHOT</org.wso2.carbon.identity.entitlement.xacml.version>-->
     </properties>
 
     <developers>
