@@ -118,11 +118,12 @@ public class ApplicationConfig {
     }
 
     public static String getISHostName() {
-        String value = "localhost";
-        if (StringUtils.isNotEmpty(getProperties().getProperty(IS_HOST_NAME))) {
-            value = getProperties().getProperty(IS_HOST_NAME);
+        String value = "localhost"
+            ;
+        if  (StringUtils.isNotEmpty(getProperties().getProperty(IS_HOST_NAME))) {
+                value = getProperties().getProperty(IS_HOST_NAME);
         }
-        return value;
+    return value;
     }
 
     public static int getISPort() {
